@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4 - Modulo 4</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container py-5">
+      <h1 class="text-center mb-4">Ejercicio 4</h1>
+      <h2 class="text-center mb-4">Comparación de Asincronía en JavaScript</h2>
+
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-4 d-flex gap-2">
+          <input
+            id="userIdInput"
+            class="form-control"
+            type="number"
+            placeholder="ID de usuario"
+          />
+          <button class="btn btn-primary" onclick="ejecutarCallbacks()">
+            Callbacks
+          </button>
+          <button class="btn btn-warning" onclick="ejecutarPromesas()">
+            Promesas
+          </button>
+          <button class="btn btn-success" onclick="ejecutarAsync()">
+            Async/Await
+          </button>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress mb-3" style="height: 25px">
+        <div
+          id="progressBar"
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          style="width: 0%"
+        >
+          Esperando...
+        </div>
+      </div>
+
+      <!-- Resultado -->
+      <div class="card">
+        <div class="card-header fw-bold">Resultado</div>
+        <div class="card-body">
+          <pre id="output" class="mb-0"></pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
